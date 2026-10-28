@@ -52,6 +52,7 @@ public class Alumno extends Persona implements ICorrer{
         }
         if(!estudio){
             System.out.println(getNombre()+" intento hacer la tarea, pero aún no estudió");
+            return;
         }
         if(hacerTarea){
             System.out.println(getNombre()+" ya hizo su tarea");
@@ -63,6 +64,7 @@ public class Alumno extends Persona implements ICorrer{
 
     public void faltar(){
         System.out.println(getNombre()+" esta fingiendo estar enfermo para no ir a clases");
+        aula.salir(this);
     }
 
     public void correr(){
