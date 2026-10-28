@@ -20,7 +20,7 @@ public class Aula {
     }
 
     public List<Alumno> getListaAlumnos(){
-        return listaAlumnos;
+        return List.copyOf(listaAlumnos);
     }
 
     public Profesor getProfe(){
